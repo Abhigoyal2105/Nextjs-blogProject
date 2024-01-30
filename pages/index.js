@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Link from 'next/link'
+import Link from "next/link";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
@@ -14,16 +14,23 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className={styles.mainnav}>  
+      <nav className={styles.main_nav}>
         <ul>
-          <Link href='/'><li>Home</li></Link>
-          <Link href='/about'><li>About</li></Link>
-          <Link href='/blog'><li>Blog</li></Link>
-          <Link href='/contact'><li>Contact</li></Link>
+          <Link href="/">
+            <li>Home</li>
+          </Link>
+          <Link href="/about">
+            <li>About</li>
+          </Link>
+          <Link href="/blog">
+            <li>Blog</li>
+          </Link>
+          <Link href="/contact">
+            <li>Contact</li>
+          </Link>
         </ul>
       </nav>
       <main className={`${styles.main} ${inter.className}`}>
-
         <div className={styles.center}>
           <h1>Hunting Coder</h1>
         </div>
@@ -31,10 +38,7 @@ export default function Home() {
           <h2>Popular Blogs</h2>
           <div className="blogItem">
             <h3>How to lear JS in 2024</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
-              voluptas.
-            </p>
+            <p>Lorem ipsum dolor sit consectetur. Esse.</p>
           </div>
           <div className="blogItem">
             <h3>How to lear JS in 2024</h3>
