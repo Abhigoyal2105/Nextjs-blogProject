@@ -18,7 +18,7 @@ export default function Home() {
           <li>Home</li>
           <li>About</li>
           <li>Blog</li>
-          <li>Contact</li>
+          <li>contact</li>
         </ul>
       </nav>
       <main className={`${styles.main} ${inter.className}`}>
